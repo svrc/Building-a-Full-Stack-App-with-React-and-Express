@@ -27,3 +27,10 @@
 
     $ npm install --save browser-sync
     $ gulp serve
+
+
+11_transpiling_our_first_jsx_script
+
+    $ npm install --save react
+    $ bower install --save react
+    $ npm install -g react-tools
