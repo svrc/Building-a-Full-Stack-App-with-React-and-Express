@@ -15,3 +15,15 @@
 
     $ npm install --save express
     $ npm install --save ejs
+    $ nodemon server/main.js
+
+
+
+10_setting_up_the_gulp_file
+
+    $ npm install -g gulp
+    $ npm install --save gulp gulp-live-server
+    $ gulp live-server
+
+    $ npm install --save browser-sync
+    $ gulp serve

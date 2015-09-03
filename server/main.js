@@ -4,4 +4,4 @@ var app = new express();
 
 app.get('/', function(req,res){
     res.render('./../app/index.ejs',{});
-}).listen(8080);
+}).listen(3000);
