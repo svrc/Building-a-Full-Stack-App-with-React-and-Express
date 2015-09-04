@@ -21,7 +21,7 @@
 
 10_setting_up_the_gulp_file
 
-    $ npm install -g gulp
+    # npm install -g gulp
     $ npm install --save gulp gulp-live-server
     $ gulp live-server
 
@@ -33,4 +33,14 @@
 
     $ npm install --save react
     $ bower install --save react
-    $ npm install -g react-tools
+    # npm install -g react-tools
+
+12_bundling_the_application_with_browserify
+
+    # npm install -g browserify
+    $ npm install --save browserify
+    $ npm install --save reactify
+    $ npm install --save vinyl-source-stream
+
+    $ gulp bundle
+    $ gulp serve
