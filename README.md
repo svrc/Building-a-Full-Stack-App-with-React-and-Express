@@ -68,3 +68,7 @@
 17_implementing_a_flux_dispatcher
 
     $ npm install --save guid # (generate random strings)
+
+18_adding_new_grocery_items_to_the_list
+
+    $ gulp serve
