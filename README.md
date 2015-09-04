@@ -82,3 +82,7 @@
     $ gulp serve
 
 21_creating_a_flux_store
+
+22_completion_of_add_item_functionality
+
+    $ gulp serve
