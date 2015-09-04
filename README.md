@@ -48,3 +48,11 @@
 13_creating_a_react_component
 
     $ gulp serve
+
+<br/>
+
+### 03 creating a react front end
+
+14_displaying_a_list_of_items_with_react
+
+    $ gulp serve
