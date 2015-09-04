@@ -56,3 +56,7 @@
 14_displaying_a_list_of_items_with_react
 
     $ gulp serve
+
+15_composing_react_classes
+
+    $ gulp serve
