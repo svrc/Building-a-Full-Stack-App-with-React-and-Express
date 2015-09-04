@@ -60,3 +60,7 @@
 15_composing_react_classes
 
     $ gulp serve
+
+16_conditionally_applying_classes
+
+    $ gulp serve
