@@ -64,3 +64,7 @@
 16_conditionally_applying_classes
 
     $ gulp serve
+
+17_implementing_a_flux_dispatcher
+
+    $ npm install --save guid # (generate random strings)
