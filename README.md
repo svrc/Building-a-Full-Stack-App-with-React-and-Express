@@ -97,3 +97,15 @@
     $ gulp serve
 
 24_buying_items
+
+    $ gulp serve
+
+25_adding_styles_to_the_app  
+
+    $ bower install --save skeleton
+
+ bower_components not worked correctly on this project, and i decided to copy files to folder manually.
+
+    $ cp bower_components/skeleton/css/*.css .tmp/
+
+     $ gulp serve
