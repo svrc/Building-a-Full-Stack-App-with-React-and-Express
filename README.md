@@ -86,3 +86,16 @@
 22_completion_of_add_item_functionality
 
     $ gulp serve
+
+
+<br/>
+
+### 04 completing the front end
+
+23_deleting_items_from_the_list
+
+
+    $ gulp serve
+
+
+    
