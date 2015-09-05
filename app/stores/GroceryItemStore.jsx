@@ -35,6 +35,20 @@ function GroceryItemStore(){
         triggerListeners();
     }
 
+    function setGroceryItemBought(item, isBought){
+
+        console.log("setGroceryItemBought");
+
+        var _item = items.filter(function(a){
+            return a.name == item.name;
+        })[0];
+
+        item.purchased = isBought || false;
+
+        console.log("items.purchased " + items.purchased);
+        triggerListeners();
+    }
+
 
 
     function onChange(listener){
@@ -48,6 +62,9 @@ function GroceryItemStore(){
     }
 
     dispatcher.register(function(event){
+
+        console.log("dispatcher.register");
+
         var split = event.type.split(':');
         if (split[0]==='grocery-item'){
             switch(split[1]){
@@ -57,6 +74,17 @@ function GroceryItemStore(){
 
                 case "delete":
                     deleteGroceryItem(event.payload);
+                    break;
+
+                case "buy":
+
+                    console.log("dispatcher.register.buy");
+                    setGroceryItemBought(event.payload, true);
+                    break;
+
+                case "unbuy":
+                    console.log("dispatcher.register.unbuy");
+                    setGroceryItemBought(event.payload, false);
                     break;
             }
         }

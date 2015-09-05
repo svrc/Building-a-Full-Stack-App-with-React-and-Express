@@ -94,8 +94,6 @@
 
 23_deleting_items_from_the_list
 
-
     $ gulp serve
 
-
-    
+24_buying_items
