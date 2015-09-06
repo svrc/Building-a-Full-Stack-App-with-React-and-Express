@@ -127,4 +127,7 @@
 29_adding_body_parser_express_middleware
 
     $ npm install --save body-parser
-    
+
+30_creating_a_rest_helper
+
+    $ npm install --save jquery
