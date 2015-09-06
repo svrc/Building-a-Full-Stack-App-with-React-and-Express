@@ -131,3 +131,9 @@
 30_creating_a_rest_helper
 
     $ npm install --save jquery
+
+31_implementing_get_requests
+
+    $ gulp serve
+
+    
