@@ -121,5 +121,10 @@
 28_implementing_a-route_in_express
 
     $ gulp serve
-    
+
     http://localhost/api/items
+
+29_adding_body_parser_express_middleware
+
+    $ npm install --save body-parser
+    
