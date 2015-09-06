@@ -139,3 +139,19 @@
 32_modifying_data_with_post_requests
 
     $ gulp serve
+
+
+<br/>
+
+### 06 adding mongodb
+
+33_installing_and_running_mongodb
+
+34_implementing_mongoose
+
+    $ npm install --save mongoose
+
+    $ gulp serve
+
+
+    
