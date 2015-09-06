@@ -117,3 +117,9 @@
 ### 05 implementing an express back end
 
 27_creating_an_items_route
+
+28_implementing_a-route_in_express
+
+    $ gulp serve
+    
+    http://localhost/api/items
