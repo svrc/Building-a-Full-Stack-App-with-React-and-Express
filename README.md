@@ -1,6 +1,15 @@
 # Building-a-Full-Stack-App-with-React-and-Express
 [Pluralsight] Building a Full-Stack App with React and Express [2015, ENG]
 
+**Original SRC:**  
+https://github.com/danielstern/react-express-examplar
+
+UPD:  
+To run gulp task with nodemon use:
+
+    $ nodemon --watch gulpfile.js --exec "gulp serve"
+
+___
 
 
 ### 02 scaffolding the app
@@ -172,3 +181,15 @@ I DONT KNOW HOW TO CORRECT. AND THIS IS NOT VERY INPORTANT FOR ME.
 
 IF YOU KNOW HOW TO CORRECT, PLEASE SEND ME PULL REQUEST.
 THANKS.
+
+
+<br/>
+
+### 07 making the app isomorphic
+
+40 updating the ejs template for react
+
+41_adding_isomorphic_functionality_to_express_using_react_and_babel
+
+    $ npm install --save babel
+    $ gulp serve
