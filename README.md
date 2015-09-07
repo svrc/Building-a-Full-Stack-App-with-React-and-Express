@@ -154,3 +154,9 @@
     $ gulp serve
 
 35_creating_a_schema
+
+36_implementing_the_item_model
+
+    $ gulp serve
+
+    
