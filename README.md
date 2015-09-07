@@ -160,3 +160,15 @@
     $ gulp serve
 
 37_adding_patch_and_delete_to_express_and_mongoose
+
+38_updating_editing_and_updating_items_on_the_front_end
+
+    $ gulp serve
+
+DONT WORK CORRECTLY  
+TO DELETE ADDED ITEM, I SHOULD PRESS F5 to REMOVE ITEM WITHOUT ERRORS.  
+THE REASON IS BECAUSE WHEN NEW ITEM IS CREATING it SENDING on FORM WITHOUT _id.  
+I DONT KNOW HOW TO CORRECT. AND THIS IS NOT VERY INPORTANT FOR ME.
+
+IF YOU KNOW HOW TO CORRECT, PLEASE SEND ME PULL REQUEST.
+THANKS.

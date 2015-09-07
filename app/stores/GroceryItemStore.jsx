@@ -19,8 +19,8 @@ function GroceryItemStore(){
     function addGroceryItem(item){
         items.push(item);
         triggerListeners();
-        
-        helper.post("/api/items",item);
+
+        helper.post("/api/items", item);
     }
 
     function deleteGroceryItem(item){
@@ -33,6 +33,8 @@ function GroceryItemStore(){
 
         items.splice(index,1);
         triggerListeners();
+
+        helper.del('api/items/' + item._id);
     }
 
     function setGroceryItemBought(item, isBought){
@@ -47,9 +49,9 @@ function GroceryItemStore(){
 
         console.log("items.purchased " + items.purchased);
         triggerListeners();
+
+        helper.patch('/api/items/' + item._id, item);
     }
-
-
 
     function onChange(listener){
         listeners.push(listener);
@@ -62,7 +64,7 @@ function GroceryItemStore(){
     }
 
     dispatcher.register(function(event){
-
+        
         console.log("dispatcher.register");
 
         var split = event.type.split(':');

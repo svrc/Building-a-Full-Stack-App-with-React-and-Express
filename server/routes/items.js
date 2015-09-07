@@ -4,7 +4,7 @@ module.exports = function(app){
 
     app.route('/api/items')
     .get(function(req,res){
-        GroceryItem.find(function(error, doc){
+        GroceryItem.find(function(err, doc){
             res.send(doc);
         });
     })
@@ -13,19 +13,25 @@ module.exports = function(app){
         var groceryItem = new GroceryItem(item);
         groceryItem.save(function(err, data){
             res.status(300).send();
+            console.log("save to mongo result:" + " item " + item + " err " + err + " data " + data);
         });
     });
 
-    app.route('api/items/:id')
+    app.route('/api/items/:id')
     .delete(function(req, res){
-        groceryItem.find({
+        console.log("removing id...", req.params.id);
+        GroceryItem.findOne({
             _id:req.params.id
-        }).remove();
+        }).remove(function(x){
+            console.log("removed: ", x);
+        });
     })
     .patch(function(req, res){
-        groceryItem.findOne({
+        console.log("patching id...", req.body._id);
+        GroceryItem.findOne({
             _id:req.body._id
         }, function(err, doc){
+            console.log("patching err: " + error);
             for (var key in req.body){
                 doc[key] = req.body[key];
             }
