@@ -12,8 +12,8 @@ module.exports = function(app){
         var item = req.body;
         var groceryItem = new GroceryItem(item);
         groceryItem.save(function(err, data){
-            res.status(300).send();
-            console.log("save to mongo result:" + " item " + item + " err " + err + " data " + data);
+            res.status(200).send(data);
+            console.log("save to mongo result:" + " item " , item , " err " , err , " data " , data);
         });
     });
 
@@ -31,7 +31,7 @@ module.exports = function(app){
         GroceryItem.findOne({
             _id:req.body._id
         }, function(err, doc){
-            console.log("patching err: " + error);
+            console.log("patching err: " + err);
             for (var key in req.body){
                 doc[key] = req.body[key];
             }

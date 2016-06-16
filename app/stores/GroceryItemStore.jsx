@@ -20,7 +20,12 @@ function GroceryItemStore(){
         items.push(item);
         triggerListeners();
 
-        helper.post("/api/items", item);
+        helper.post("/api/items", item).then(
+            function(data){
+                item._id = data._id;
+            }, function(reason){
+                console.log("failed add", reason);
+            });
     }
 
     function deleteGroceryItem(item){
